@@ -1,6 +1,6 @@
 [tool.mypy]
 python_version = "3.10"
-exclude = ["scripts", "docs", "test"]
+exclude = ["docs", "test"]
 disallow_untyped_defs = true
 
 

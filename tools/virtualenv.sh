@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf .venv
 python3 -m venv .venv
-source .venv/bin/activate
+source tools/activate.sh
 source tools/install.sh
-echo "!!! Please run 'source .venv/bin/activate' to enable the environment !!!"
+echo "!!! Please run 'tools/activate.sh' to enable the environment !!!"
 

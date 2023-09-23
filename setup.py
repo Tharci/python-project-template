@@ -37,10 +37,10 @@ setup(
     long_description_content_type="text/markdown",
     author=author,
     author_email=email,
-    packages=find_packages(exclude=["tests", ".github", "scripts"]),
+    packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": [f"{project_name} = scripts.__main__:main"]
+        "console_scripts": [f"{project_name} = src.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
