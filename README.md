@@ -13,20 +13,22 @@
     - Or run `tools/virtualenv.sh`, which will use python3 on path
 1. Remember to activate virtual environment using `tools/activate.sh`
 
-## Dependencies
+## Tools
+
+### Dependencies
 
 Run `tools/install.sh` to install both production and test dependencies.
 
-## Linter
+### Linter
 
 Run `tools/lint.sh` to execute linter and code formatter tools.
 Some of the tools can be configured in `pyproject.toml`.
 
-## Test
+### Test
 
 Run `tools/test.sh` to execute linter and unit tests.
 
-## Docs
+### Docs
 
 Run `tools/docs.sh` to build the documentation.
 mkdocs can be configured in `mkdocs.yml`.
