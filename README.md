@@ -1,19 +1,14 @@
 # Python Project Template
 
-## How to use
-
 **Note** that Git Bash should be used on Windows to execute the bash scripts.
 
-1. Rename `scr/project_name` folder
-1. Replace project_name in relevant files
-1. Edit project information in setup.py
-1. Edit VERSION
-1. Setup virtual env
-    - Either use some IDE 
-    - Or run `tools/virtualenv.sh`, which will use python3 on path
-1. Remember to activate virtual environment using `tools/activate.sh`
-
 ## Tools
+
+### Virtual Environment
+
+Run `tools/virtualenv.sh` to create a virtual environment.
+
+Run `tools/activate.sh` to activate the virtual environment.
 
 ### Dependencies
 

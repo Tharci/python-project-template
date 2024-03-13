@@ -3,10 +3,10 @@ import os
 from setuptools import find_packages, setup
 
 # Project metadata
-project_name="project_name"
-author="Your Name"
+project_name = "project_name"
+author = "Your Name"
 # email="your@email.com"
-description=f"Awesome project '{project_name}' created by {author}"
+description = f"Awesome project '{project_name}' created by {author}"
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely
