@@ -1,3 +1,3 @@
-from .module1 import Module1
+from .module import Module
 
-__all__ = ["Module1"]
+__all__ = ["Module"]

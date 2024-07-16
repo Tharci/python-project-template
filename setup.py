@@ -36,7 +36,7 @@ setup(
     long_description_content_type="text/markdown",
     author=author,
     # author_email=email,
-    packages=find_packages(exclude=["tests", ".github"]),
+    packages=find_packages(exclude=["test", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
         "console_scripts": [f"{project_name} = src.__main__:main"]

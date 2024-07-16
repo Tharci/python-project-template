@@ -1,4 +1,4 @@
-class Module1:
+class Module:
     """Example class"""
 
     def x(self) -> int:

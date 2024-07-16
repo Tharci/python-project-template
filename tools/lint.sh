@@ -1,23 +1,14 @@
 #!/bin/bash
+set -e
 
 echo "[INFO] Running linting tools"
 
-echo "[INFO] Running isort"
-isort src
-
-echo "[INFO] Running flake8"
-flake8 src/
-
-echo "[INFO] Running black on src/"
-black -l 79 src/
-
-echo "[INFO] Running black on tests/"
-black -l 79 tests/
-
-echo "[INFO] Installing mypy types"
-mypy --install-types < yes
+echo "[INFO] Running ruff"
+ruff check --fix src
+ruff check --fix test
 
 echo "[INFO] Running mypy"
-mypy src/
+yes | mypy --install-types src
+mypy src
 
 echo "[INFO] Done linting"
