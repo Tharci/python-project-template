@@ -1,0 +1,32 @@
+[environment]
+python-version = "3.13"
+
+[src]
+include = ["src"]
+exclude = [
+  ".venv/**",
+  "venv/**",
+  "build/**",
+  "dist/**",
+  "**/__pycache__/**",
+  "**/tests/fixtures/**",
+]
+
+[analysis]
+respect-type-ignore-comments = false
+
+[terminal]
+error-on-warning = true
+output-format = "full"
+
+[rules]
+possibly-unresolved-reference = "error"
+division-by-zero = "error"
+
+
+[[overrides]]
+include = ["tests/**", "**/test_*.py"]
+
+[overrides.rules]
+possibly-unresolved-reference = "warn"
+division-by-zero = "ignore"
