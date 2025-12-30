@@ -7,8 +7,7 @@ echo "[INFO] Running ruff"
 ruff check --fix src
 ruff check --fix test
 
-echo "[INFO] Running mypy"
-yes | mypy --install-types src
-mypy src
+echo "[INFO] Running ty"
+ty check
 
 echo "[INFO] Done linting"

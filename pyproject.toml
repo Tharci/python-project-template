@@ -1,13 +1,40 @@
-[tool.mypy]
-python_version = "3.12"
-exclude = ["docs", "test"]
-disallow_untyped_defs = true
-
-
-[[tool.mypy.overrides]]
-module = [
-    
+[project]
+name = "project_name"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = "~=3.13.0"
+license = { text = "MIT" }
+authors = [
+    { name = "Marcell Tamas Toth" }
 ]
-disable_error_code = []
-ignore_missing_imports = true
 
+dependencies = [
+    "requests>=2.32",
+    "pydantic>=2.12",
+    "fastapi",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+    "ruff>=0.14",
+    "ty>=0.0.8",
+    "pytest-cov",
+    "mkdocs",
+    "pytest-cov",
+    "coverage",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=80.0"]
+build-backend = "setuptools.build_meta"
